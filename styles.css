@@ -95,3 +95,14 @@ header{
     justify-content:space-around;
     flex-direction:column;
 }
+
+#quote{
+    display:flex;
+    flex-direction:column;
+    flex:auto;
+    justify-content:space-around;
+    text-align:center;
+    padding-left:10%;
+    padding-right:10%;
+    background-color:lightgrey;
+}
