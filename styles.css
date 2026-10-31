@@ -11,8 +11,7 @@ div{
 
 img{
     display:flex;
-    flex-grow:0;
-    flex-shrink:1;
+    flex: auto;
 }
 
 a{
@@ -24,6 +23,18 @@ ul{
     display:flex;
     list-style-type:none;
     gap:10px;
+    flex-wrap:wrap;
+}
+
+li{
+    display:flex;
+    flex:auto;
+    flex-direction:column;
+    text-align:center;
+    flex-wrap:wrap;
+    margin:0px;
+    text-wrap:row;
+    width:5%;
 }
 
 button{
@@ -40,6 +51,11 @@ button{
     font-weight:bold;
     flex-grow:0;
     text-wrap:nowrap;
+    min-width:fit-content;
+}
+
+header{
+    font-weight:bold;
 }
 
 .bar{
@@ -48,6 +64,16 @@ button{
     padding:5px 20px;
     margin:0px;
     align-items:center;
+}
+
+.boxedImg{
+    display:flex;
+    width:128px;
+    height:128px;
+    flex: auto;
+    border:5px solid blue;
+    border-radius:15%;
+    align-self:center;
 }
 
 #status{
@@ -60,4 +86,12 @@ button{
 #infoColumn{
     flex-direction:column;
     padding-right:30px;
+}
+
+#info{
+    display:flex;
+    text-align:center;
+    align-content:center;
+    justify-content:space-around;
+    flex-direction:column;
 }
