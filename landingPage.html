@@ -11,7 +11,7 @@
         <!-- This next div is for the nav bar. The class should be able to be repurposed to avoid repeating code.-->
         <div class="bar">
             <header>Header Logo</header>
-            <ul>
+            <ul style="flex-direction:row;align-items:last baseline;">
                 <li><a href="landingPage.html">header link one</a></li>
                 <li><a href="landingPage.html">header link two</a></li>
                 <li><a href="landingPage.html">header link three</a></li>
@@ -39,7 +39,13 @@
         <p style="font-style:italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure ex vitae earum nesciunt quos ratione placeat repellat inventore pariatur suscipit excepturi velit a alias, culpa optio, rem maxime est!</p>
         <sub style="font-weight:bold;">-Thor, God of Thunder<sub>
     </div>
-    <div id="action"></div>
+    <div id="action">
+        <ul style="flex-direction:column;align-items:baseline;">
+            <li>Call to action! It's time!</li>
+            <li style="font-weight:lighter;">Sign up for our product by clicking that button right over there!</li>
+        </ul>
+        <button style="background-color:rgb(94, 150, 219);border:white solid 2px;padding:10px;">Sign up</button>
+    </div>
     
 </body>
 </html>

@@ -21,20 +21,19 @@ a{
 
 ul{
     display:flex;
+    flex: auto;
     list-style-type:none;
-    gap:10px;
-    flex-wrap:wrap;
+    align-items:center;
+    padding:0px;
 }
 
 li{
     display:flex;
     flex:auto;
+    flex-grow:100%;
     flex-direction:column;
-    text-align:center;
-    flex-wrap:wrap;
     margin:0px;
-    text-wrap:row;
-    width:5%;
+    /*text-wrap:row;*/
 }
 
 button{
@@ -49,6 +48,7 @@ button{
     justify-content:space-around;
     border-style:none;
     font-weight:bold;
+    flex: auto;
     flex-grow:0;
     text-wrap:nowrap;
     min-width:fit-content;
@@ -105,4 +105,12 @@ header{
     padding-left:10%;
     padding-right:10%;
     background-color:lightgrey;
+}
+
+#action{
+    align-items:center;
+    padding:30px;
+    background-color:rgb(94, 150, 219);
+    color:white;
+    margin:5% 30%;
 }
